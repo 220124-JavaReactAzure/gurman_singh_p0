@@ -1,0 +1,6 @@
+package com.revature.course_reg.util;
+
+public interface Collection {
+
+	boolean add(int element);
+}

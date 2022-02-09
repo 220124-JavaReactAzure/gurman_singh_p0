@@ -1,0 +1,5 @@
+package com.revature.course_reg.util;
+
+public class MenuRouter {
+
+}

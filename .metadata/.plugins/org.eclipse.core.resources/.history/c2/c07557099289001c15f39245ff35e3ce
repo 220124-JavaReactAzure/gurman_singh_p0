@@ -1,0 +1,32 @@
+package com.revature.course_reg.services;
+
+import org.junit.Assert;
+import org.junit.Before;
+import org.junit.Test;
+
+import com.revature.course_reg.models.Student;
+
+public class StudentServiceTestSuite {
+
+	StudentService sut;
+	
+	@Before
+	public void testPrep() {
+		sut = new StudentService();
+	}
+	
+	@Test
+	public void test_isStudentValid_returnsTrue_givenValidUser() {
+		
+		// Arrange
+		Student validStudent = new Student("valid","valid","valid","valid","valid");
+		
+		// Act
+		boolean actualResult = sut.isStudentValid(validStudent);
+		
+		// Assert
+		Assert.assertTrue(actualResult);
+		
+	}
+	
+}

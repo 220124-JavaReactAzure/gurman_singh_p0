@@ -1,0 +1,12 @@
+package com.revature.course_reg.util;
+
+// Generics
+public interface Collection {
+
+	boolean add(int element);
+	boolean add(byte element);
+	boolean contains(int element);
+	boolean isEmpty();
+	boolean remove(int element);
+	int size();
+}

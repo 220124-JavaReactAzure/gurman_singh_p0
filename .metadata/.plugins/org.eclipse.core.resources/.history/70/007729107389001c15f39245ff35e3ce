@@ -1,0 +1,11 @@
+package com.revature.course_reg.util;
+
+import com.revature.course_reg.menus.Menu;
+
+public class MenuRouter {
+	private final LinkedList<Menu> menus;
+	
+	public MenuRouter() {
+		menus = new LinkedList<>();
+	}
+}

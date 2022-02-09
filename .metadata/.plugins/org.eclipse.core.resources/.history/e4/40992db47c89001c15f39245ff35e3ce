@@ -1,0 +1,7 @@
+package com.revature.course_reg.daos;
+
+import com.revature.course_reg.util.List;
+
+public class StudentDAO implements List<T> {
+
+}

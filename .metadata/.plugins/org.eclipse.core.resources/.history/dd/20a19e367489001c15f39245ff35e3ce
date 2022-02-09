@@ -1,0 +1,18 @@
+package com.revature.course_reg.menus;
+
+import java.io.BufferedReader;
+
+public class RegisterMenu extends Menu{
+
+	public RegisterMenu(String name, String route, BufferedReader consoleReader) {
+		super(name, route, consoleReader);
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	public void render() throws Exception {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

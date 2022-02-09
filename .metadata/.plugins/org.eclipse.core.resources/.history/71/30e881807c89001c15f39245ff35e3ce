@@ -1,0 +1,10 @@
+package com.revature.course_reg.daos;
+
+public interface CrudDAO<T> {
+	
+	
+	// CRUD: Creat, Read, Update, Delete
+	
+	
+
+}

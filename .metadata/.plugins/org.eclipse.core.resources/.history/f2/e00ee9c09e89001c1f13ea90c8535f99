@@ -1,0 +1,50 @@
+package com.revature.course_reg.menus;
+
+import java.io.BufferedReader;
+
+import com.revature.course_reg.services.StudentService;
+import com.revature.course_reg.util.MenuRouter;
+
+public class DashboardMenu extends Menu{
+
+	private final StudentService studentService;
+
+	public DashboardMenu(BufferedReader consoleReader, MenuRouter router, StudentService studentService) {
+		super("Dashboard", "/dashboard", consoleReader, router);
+		this.studentService = studentService;
+	}
+
+	@Override
+	public void render() throws Exception {
+		
+		Student sessionStudent = studentService.getSessionStudent();
+		
+		if (sessionStudent == null) {
+			System.out.println("You are not currently logged in! Returning to login screen.");
+			router.transfer("/login");
+			return;
+		}
+		
+		while (studentService.isSessionActive()) {
+			System.out.println("Welcome: " + sessionStudent.getUsername());
+			String menu = "1) Enroll for class\n" +
+							"2) Drop Class\n" +
+							"3) Logout\n";
+			System.out.print(menu);
+			
+			String input = consoleReader.readLine();
+			
+			switch(input) {
+			case "1":
+				router.transfer("/login");
+				break;
+			case "2":
+			router.transfer("/login");
+				break;
+			case "3":
+				studentService.logout();
+			}
+		}
+	}
+
+}

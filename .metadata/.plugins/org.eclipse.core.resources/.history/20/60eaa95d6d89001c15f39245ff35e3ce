@@ -1,0 +1,5 @@
+package com.revature.course_reg.util;
+
+public interface List extends Collection<T> {
+	
+}
