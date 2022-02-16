@@ -1,0 +1,47 @@
+package com.revature.course_reg.models;
+
+public class Enrolled {
+
+	private String enrolled_id;
+	private String course_name;
+	private String student_id;
+	
+	
+	//Constructors
+	
+	public Enrolled (String enrolled_id, String course_name, String student_id) {
+		this.enrolled_id = enrolled_id;
+		this.course_name = course_name;
+		this.student_id = student_id;
+	}
+	
+	
+	
+	// Getters and Setters
+	
+	public String getEnrolled_id() {
+		return enrolled_id;
+	}
+	
+	public void setEnrolled_id(String enrolled_id) {
+		this.enrolled_id = enrolled_id;
+	}
+	
+	public String getCourse_name() {
+		return course_name;
+	}
+	
+	public void setCourse_name(String course_name) {
+		this.course_name = course_name;
+	}
+	
+	public String getStudent_id() {
+		return student_id;
+	}
+	
+	public void setStudent_id(String student_id) {
+		this.student_id = student_id;
+	}
+	
+	
+}

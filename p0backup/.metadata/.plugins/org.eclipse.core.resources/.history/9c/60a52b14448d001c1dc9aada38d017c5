@@ -1,0 +1,8 @@
+package com.revature.course_reg.models;
+
+public class Enrolled {
+
+	private String enrolled_id;
+	private String 
+	
+}

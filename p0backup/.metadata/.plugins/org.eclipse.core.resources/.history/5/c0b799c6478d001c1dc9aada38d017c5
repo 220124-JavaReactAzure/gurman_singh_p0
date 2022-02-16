@@ -1,0 +1,24 @@
+package com.revature.course_reg.menus;
+
+import java.io.BufferedReader;
+
+import com.revature.course_reg.services.CourseService;
+import com.revature.course_reg.util.MenuRouter;
+
+public class AddClassMenu extends Menu {
+	
+	private final CourseService courseService;
+
+	public AddClassMenu(String name, String route, BufferedReader consoleReader, MenuRouter router, CourseService courseService) {
+		super(name, route, consoleReader, router);
+
+		this.courseService = courseService;
+	}
+
+	@Override
+	public void render() throws Exception {
+		System.out.println("Add Course\n" + "What is the name of the course?");
+		
+		String courseName = consoleReader.readLine();
+	}
+}

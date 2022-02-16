@@ -1,0 +1,25 @@
+package com.revature.course_reg.models;
+
+public class Course {
+
+	private String courseName;
+	private String creator_id;
+	
+	
+	public String getCourseName() {
+		return courseName;
+	}
+	
+	public void setCourseName(String courseName) {
+		this.courseName = courseName;
+	}
+	
+	public String getCreator() {
+		return creator_id;
+	}
+	
+	public void setCreator(String creator_id) {
+		this.creator = creator;
+	}
+	
+}

@@ -1,7 +1,0 @@
-package com.revature.course_reg.util;
-
-public interface List<T> extends Collection<T> {
-	
-	T get(int index);
-	
-}

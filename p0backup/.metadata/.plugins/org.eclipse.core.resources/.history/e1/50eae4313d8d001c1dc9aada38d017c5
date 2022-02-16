@@ -1,0 +1,24 @@
+package com.revature.course_reg.services;
+
+import com.revature.course_reg.daos.CourseDAO;
+import com.revature.course_reg.models.Course;
+
+public class CourseService {
+
+	private final CourseDAO courseDAO;
+	private final StudentService studentService;
+	
+	public CourseService(CourseDAO courseDAO, StudentService studentService) {
+		this.courseDAO = courseDAO;
+		this.studentService = studentService;
+	}
+	
+	private boolean isCourseValid(Course newCourse) {
+
+		if (newCourse == null)
+			return false;
+		if (newCourse.getCourseName() == null || newCourse.getCourseName().trim().equals(""))
+			return false;
+		return (newCourse.getCreator() == null || newCourse.getCreator().trim().equals("");
+	}
+}

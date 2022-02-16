@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="com.revature.course_reg.util.ConnectionFactory"/>
+    <fullyQualifiedTypeName name="java.sql.Connection"/>
+    <fullyQualifiedTypeName name="java.sql.SQLException"/>
+    <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
+    <fullyQualifiedTypeName name="com.revature.course_reg.exceptions.ResourcePersistenceException"/>
+    <fullyQualifiedTypeName name="com.revature.course_reg.daos.CourseDAO"/>
+    <fullyQualifiedTypeName name="com.revature.course_reg.services.CourseService"/>
+    <fullyQualifiedTypeName name="com.revature.course_reg.util.List"/>
+    <fullyQualifiedTypeName name="com.revature.course_reg.exceptions.InvalidRequestException"/>
+    <fullyQualifiedTypeName name="com.revature.course_reg.models.Course"/>
+    <fullyQualifiedTypeName name="com.revature.course_reg.exceptions.AuthenticationException"/>
+</qualifiedTypeNameHistroy>
